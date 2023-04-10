@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "NoteMod",
+  "version": "${version}",
+  "name": "NoteMod",
+  "description": "A NoteMod to help us play Minecraft better.",
+  "authors": [
+    "Fanzhitianyu"
+  ],
+  "contact": {
+    "repo": "https://github.com/Fanzhitianyu/NoteMod"
+  },
+  "license": "MIT",
+  "icon": "logo.jpg",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "github.fanzhitianyu.notemod.client.NoteModClient"
+    ],
+    "main": [
+      "github.fanzhitianyu.notemod.NoteMod"
+    ]
+  },
+  "mixins": [
+    "NoteMod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
